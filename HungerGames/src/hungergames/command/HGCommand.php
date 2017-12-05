@@ -23,7 +23,7 @@ class HGCommand extends Command implements PluginIdentifiableCommand{
      *
      * @return mixed
      */
-    public function execute(CommandSender $sender, $commandLabel, array $args){
+    public function execute(CommandSender $sender, string $commandLabel, array $args){
         if(!$sender instanceof Player){
             $sender->sendMessage(Msg::color("&aPlease run this command in-game."));
             return;
